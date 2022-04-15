@@ -117,10 +117,6 @@ The following description assume to use `Makefile.legacy`, which generate
 
 Here n is the target - the real n will be computed based on the target and constraints caused by b, P&Q so that there are full blocks
 
-Setup is using a 2x3 grid per node
-Striped IB - see configuration in jobs/job.lsf
-jsrun as in jobs/job.lsf
-
 ```
 -log 1 ( print rank 0 messages )
 
