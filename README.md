@@ -107,7 +107,9 @@ Here n is the target - the real n will be computed based on the target and const
 --numa 0 ( Row major )
        1 ( Column major ) 
        2 ( 2x2 Frontier specific )
-       
+
+-gdirect (GPU awared MPI)
+
 -sys "Frontier"          # system name
 
 -sync ( enable cuda device sync after sgemm - currently only for bcast )
