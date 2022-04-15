@@ -69,32 +69,6 @@ The change to a GPU variant of IR has been discussed.  It currently works on
 CPU with a far amount of communications and mostly operations that may not
 be advantageous on a GPU.
 
-## Build instruction (Summit)
-
-```sh
-module load cmake gcc/9.4.0 cuda/11.4.2 openblas
-git clone git@github.com:at-aaims/hpl-ai
-cd hpl-ai && make build && cd build 
-```
-
-For release build:
-
-```sh
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make
-```
-
-The default optimization level is `-O3`.
-
-For debug build:
-
-```sh
-cmake -DCMAKE_BUILD_TYPE=Debug ..
-make
-```
-This will have debug info built in.
-
-
 ## Example Runs
 
 please refer to tests/summit/README.md for up to date information.
