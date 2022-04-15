@@ -72,7 +72,7 @@ be advantageous on a GPU.
 ## Build instruction (Summit)
 
 ```sh
-module load cmake gcc/7.4.0 cuda/11.2.0 openblas
+module load cmake gcc/9.4.0 cuda/11.4.2 openblas
 git clone git@github.com:at-aaims/hpl-ai
 cd hpl-ai && make build && cd build 
 ```
@@ -134,6 +134,10 @@ jsrun as in jobs/job.lsf
       3 ( use 1ringM )
       4 ( use 2ringM )
 
+--numa 0 ( column major )
+       1 ( 3x2 Summit specific ) 
+       2 ( 4x2 Frontier specific )
+       
 -sys "Frontier"          # system name
 
 -sync ( enable cuda device sync after sgemm - currently only for bcast )
