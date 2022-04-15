@@ -103,7 +103,7 @@ Spock SLURM example
 ```sh
 srun -N 25 -n 100 -c 8 --ntasks-per-node=4 \
       --gpus-per-task=1 --gpu-bind=closest ../../build/driver.x86_64 \
-      N b P -log 0 -comm <comm> --numa 2 -sys "Spock"
+      N b P -log 0 -comm <comm> --numa 2 -sys "Frontier"
 ```
 
 ## New Options
