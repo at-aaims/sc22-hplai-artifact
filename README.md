@@ -134,9 +134,9 @@ jsrun as in jobs/job.lsf
       3 ( use 1ringM )
       4 ( use 2ringM )
 
---numa 0 ( column major )
-       1 ( 3x2 Summit specific ) 
-       2 ( 4x2 Frontier specific )
+--numa 0 ( Row major )
+       1 ( Column major ) 
+       2 ( 2x2 Frontier specific )
        
 -sys "Frontier"          # system name
 
